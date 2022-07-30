@@ -1,0 +1,15 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} Edit Book:{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+
+{% block content %}
+    <h2>Book Name: {{ book.title }}</h2>
+    <p>Current Rating: {{ book.rating }}</p>
+    {{ wtf.quick_form(form, novalidate=True) }}
+{% endblock %}

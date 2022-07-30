@@ -1,0 +1,10 @@
+body {
+    background-color: #28282B;
+    align-items: center;
+    padding: 70px 100px;
+    color: #fff;
+}
+
+.form-control {
+    width: 350px
+}
